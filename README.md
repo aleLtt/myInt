@@ -1,5 +1,5 @@
 # myInt
-PURPOSE & INFO:
+*PURPOSE & INFO*:
 
 This repository contains a very easy to use C++ code for arbitrary precision positive integer numbers. The purpose is to create provide a code that allows the user to easily manage integers number represented by an arbitrary number of bits. 
 The code is thought to make it very easy to use in project where very large integer numbers are needed, but can still work for low numbers as well. It will be sufficient to download the single file and include it in your main() file, without the need to download and setup an entire library.
