@@ -35,6 +35,7 @@ The code takes care of possible overflows/underflows, as well as the manage of t
 The choice of using a vector of short values is due to the aim of using less storage memory as possible.
   
 **NOTE**:
-1) I suggest to create myInt objects only with the *new* operator, so to allocate the space into the heap and access to the objectonly through pointer. Not doing that may create memory corruption when creating, deleting or manipulating myInt objects inside a function. No memory related issue has been reported if accessing through pointers.
-2) The code is endianess independend, meaning that at the object initialization time it also takes care of the endianess of the machine for the correct allocation and manging of variables.
-3) Some functions do not work properly for some extreme conditions. The cases known so far are reported inside the code as comments, but for most of the applications and cases no issue has been reported so far. The code is still under development, known bus will be fixed as sson as possible.
+1) The code assumes to work just with positive integers.
+2) I suggest to create myInt objects only with the *new* operator, so to allocate the space into the heap and access to the objectonly through pointer. Not doing that may create memory corruption when creating, deleting or manipulating myInt objects inside a function. No memory related issue has been reported if accessing through pointers.
+3) The code is endianess independend, meaning that at the object initialization time it also takes care of the endianess of the machine for the correct allocation and manging of variables.
+4) Some functions do not work properly for some extreme conditions. The cases known so far are reported inside the code as comments, but for most of the applications and cases no issue has been reported so far. The code is still under development, known bus will be fixed as sson as possible.
