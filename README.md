@@ -9,17 +9,17 @@ The code is not completely optimized, meaning that it has been thought and to de
 The code is just a single C++ class where a myInt object is instantiated and can be handled quite like as a standard integer number. The class overwrites than all the standard operators (arithmetical, logical, bitwise and shift) so that it will be possible to perform common number operations as if you were manipulating standard integer variables.
 To make a very simple example, in order to make a sum/and/xor/shift between two myInt numbers A and B, it will be sufficient to type:
 
-myInt* C= *A + *B;\\
-bool C= *A && *B;\n
-myInt* C= *A ^ *B;\n
-myInt* C= *A << 2;\n
+myInt* C= *A + *B;  
+bool C= *A && *B;  
+myInt* C= *A ^ *B;  
+myInt* C= *A << 2;  
 
 or
 
-*A += *B;
-*A &= *B;
-*A ^= *B;
-*A <<= 2;
+*A += *B;  
+*A &= *B;  
+*A ^= *B;  
+*A <<= 2;  
 
 Not only standard operations, myInt objects are also provided with functions that enables to used addtional features to allow users to easily manipulate the object itslef. As for example, with a myInt object it is possible to:
 - perform a modulo sum
