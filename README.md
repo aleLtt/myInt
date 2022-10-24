@@ -9,10 +9,10 @@ The code is not completely optimized, meaning that it has been thought and to de
 The code is just a single C++ class where a myInt object is instantiated and can be handled quite like as a standard integer number. The class overwrites than all the standard operators (arithmetical, logical, bitwise and shift) so that it will be possible to perform common number operations as if you were manipulating standard integer variables.
 To make a very simple example, in order to make a sum/and/xor/shift between two myInt numbers A and B, it will be sufficient to type:
 
-myInt* C= *A + *B;
-bool C= *A && *B;
-myInt* C= *A ^ *B;
-myInt* C= *A << 2;
+myInt* C= *A + *B;\n
+bool C= *A && *B;\n
+myInt* C= *A ^ *B;\n
+myInt* C= *A << 2;\n
 
 or
 
